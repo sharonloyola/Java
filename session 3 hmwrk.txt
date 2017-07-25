@@ -32,3 +32,6 @@ Modifying the files in your Repository:
 
 
 NOTE: for deleting the files, follow the above GIT commands, but using “del” instead.
+
+
+Modifed for another check in
