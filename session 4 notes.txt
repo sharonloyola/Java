@@ -1,0 +1,27 @@
+﻿Variables
+Any character can be used to describe a variable, usually we use x.
+You can assign your variable with anything
+ 
+Data types
+You can classify types of data in different ways, like numbers or strings, so you can get answers of different types in different orders
+You have to tell java what kind of info you want, like age=37. Age is the variable and int is the data type, since int means number.
+
+
+Syntax
+Syntax is like grammar in java programming.
+Like the way we put a . at the end of a sentence, you have to put a ; at the end of each line in a program
+
+
+If statement
+With this, you can basically get any kind of output from the computer based on your requirements
+Use if, else if, if else, and else for your if statement.
+
+
+Loops
+One kind of loop is for loop.
+This is used for making things repeat themselves, like making helloworld come ten times on the console
+
+
+Curly brackets
+A curly bracket {} is used for starting and finishing programs.
+Every { needs to have a } otherwise you will get a syntax error
