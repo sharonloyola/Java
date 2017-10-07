@@ -1,0 +1,96 @@
+﻿Syntax
+Syntax is the grammar of programming. 
+Its very easy to program java if you know the syntax
+
+
+If 
+If (...){}
+Condition is basically a yes or no question. 
+
+
+Else if, else
+Else if is another condition
+If it’s a yes for the if, it will come down to the else if
+Else is for anything else that can happen
+
+
+For 
+For can be used as a loop    
+for(...;...;..){}
+
+
+
+
+Custom data types (class)
+You define variables here
+Basically you make variables
+Remember to not click the check mark during making this class
+
+
+Class
+Class can be thought of as a template, cookie cutter, blueprint, etc.
+
+
+actions/methods/functions/behavior
+Actions are things you do, like run, play
+Read, read harry potter
+You can use these in java programming
+
+
+Actions in programming
+   class Person{
+       // no input
+       // no output
+       void run(){
+
+       }
+
+       // input : bookName
+       // output: none
+       void readBook(String bookName){
+
+       }
+
+       // input: none
+       // output: miles ran
+       int tellMeMilesRanToday(){
+           return 10;
+       }
+
+       // input: money
+       // output: coffee
+       String getCoffee(int money){
+           return "latte";
+       }
+   }
+Like this, we can ask and give back info using data types and actions
+
+
+Calculator program
+   class Calculator{
+       int add(int x, int y){
+           int z;
+           z = x+y;
+           return z;
+       }
+
+       int sub(int x, int y){
+           int z;
+           z = x-y;
+           return z;
+       }
+   }
+We can do simple addition here
+
+
+Sum can be very helpful here
+Sum is nothing but a variable, but we use it to help get the addition sums
+
+
+Note action is actually called method
+Scope
+This declares when a variable is alive and dead using {}
+When it is alive it is still to be used in the program
+When a variable is dead it is done being used and is determined by }
+This way you can use the same variable twice and it won’t have to mean the same thing 
+(But you must declare it twice)

@@ -1,0 +1,147 @@
+﻿RECAP
+
+
+Class
+Class is basically the technical term for data type
+
+
+Object
+Object is the technical term for creating a variable
+
+
+Field
+Fields are simply class properties
+(int, string, double, float, etc.)
+
+
+Methods
+What we call actions, like starting and stopping a car
+
+
+Fields and methods
+Classes will have both fields and methods
+
+
+CONNECTING CLASS METHODS AND CLASS FIELDS
+
+
+  class Car{
+       String name;
+       int horsePower;
+
+       void start(){
+           System.out.println("starting");
+       }
+
+       void stop(){
+           System.out.println("stopping");
+       }
+   }
+
+
+
+
+ Car c1 = new Car();
+   c1.name = "bmw";
+   c1.horsePower = 200;
+   c1.start();
+   c1.stop();
+
+   Car c2 = new Car();
+   c2.name = "honda";
+   c2.horsePower = 50;
+   c2.start();
+   c2.stop();
+
+
+
+
+output
+starting
+stopping
+starting
+stopping
+
+
+Problem with above is that we don’t know which car started and stopped first
+So..
+public class Car {
+        String name;
+        int horsePower;
+
+        void start() {
+                System.out.println("starting : " + name + " which has:" + horsePower + " horse power");
+        }
+
+        void stop() {
+                System.out.println("stopping: " + name);
+        }
+}
+
+
+
+
+and the output will be
+starting : bmw which has:200 horsepower
+stopping: bmw
+starting : honda which has:50 horse power
+stopping: honda
+Those fields are called object variables 
+
+
+We still have one problem. Look the code below
+public class Application {
+
+        public static void main(String[] args) {
+                Car c1 = new Car();
+                c1.name = "bmw";
+                c1.horsePower = 200;
+                c1.start();
+                // Start one more time and see what happens
+                c1.start();
+                c1.stop();
+
+                Car c2 = new Car();
+                c2.name = "honda";
+                c2.horsePower = 50;
+                c2.start();
+                c2.stop();
+
+        }
+}
+
+and the output will be
+starting : bmw which has:200 horse power
+starting : bmw which has:200 horse power
+stopping: bmw
+starting : honda which has:50 horse power
+stopping: honda
+
+Oops, we were able to start the car twice without stopping. In real scenario we can only stop after starting the car. We should be able to fix this
+
+
+
+
+This is where BOOLEAN comes in
+
+
+Boolean is also a data type
+It helps with yes or no statements
+Sort of like the if statement in java too
+
+
+start method
+   is started
+       "sorry you have started already. you need to stop before starting again
+   else
+       "start" 
+       started = true
+
+stop method
+   is started
+       "stopping"
+       started = false
+   else
+       "sorry,  you have not started yet. please start the car before stopping"
+
+If you remember is in real conversation will become if in programming world.
