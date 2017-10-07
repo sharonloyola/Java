@@ -1,0 +1,29 @@
+﻿Taking input from user
+Import the scanner with java.util.Scanner
+Them make a variable and use the scanner
+
+
+Steps for writing a program
+1 understand what the program should do
+2 run an experimental program through your mind
+3 start to write the program
+
+
+
+
+Psuedo logic
+You can use this to write notes in the program
+Or cancel out texts
+//like this…:)
+
+
+For loops
+Sometimes when you have to do a repeated addition or computation, the programs get very long 
+That is where you use the for loop
+You can make it do something for many times
+
+
+Eclipse navigation
+Alt plus the underlined letter in the icons of the top toolbar opens that icon
+Alt f opens file
+Alt f enter enter makes a new project
