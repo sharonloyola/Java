@@ -1,0 +1,61 @@
+﻿Session 6 notes
+
+
+Your own data types
+You can define your own data type using basic data types (int , String ).   class Person{
+
+   }
+Here you have defined your own data type called Person. Above class is keyword and Person is the name you have given to your data type.
+The syntax is
+class yourdatatypename{
+}
+Using his data type
+new is the keyword and you are saying to Java that I want to create new value ( the technical term object which we will learn more about this in the next class) for this data type I have created. Once you have done this, then you can assign individual parts of Person (age,name,grade,height,weight) using . (dot) like below
+   Person person1 = new Person();
+   person1.age = 20;
+   person1.name = "sai";
+   person1.grade = 7;
+   person1.height = 5;
+   person1.weight = 100;
+In order to assign age we use our variable person1 and then . (dot) and then one of the property you have defined in the class.
+Complete programs
+
+
+* Open Eclpse
+* Create Java project called MyOwnDataSample
+* Create class called Application.java and make sure that public static void main() check mark is checked.
+* Print line using System.out to say learning data sample
+   * System.out.println("learning my own data type");
+* Run the program and make sure that it prints.
+* At this time we are ready to add our own data type
+* File->New->Class and name Person
+* Make sure that public static void main() is unchecked ( this is the difference between when you have created Applicationclass where you have checked it and this class where you uncheck. The reason is our Java project is going to have 2 classes but only one class needs to have main method so that when you run, the program starts from first instructions in main)
+* In newly created Person class input the following
+
+
+
+
+Create program with more data types
+
+
+* Repeat the above program but this time come up with your data types
+* Some of them you came up with are
+   * Movie
+   * Animal
+   * House
+   * Recipe
+Note The data type which we wil be calling class now-on-wards should be Singular Noun.
+Some common mistakes in the class
+Using the variables without declaring them.
+ variablenotdeclared 
+
+The curly ({ } ) brackets.
+In Java the curly brackets ( { and }) form a logical block and every opening of { should have proper }. Class starts with { and ends with }. Within the class method like main starts with { and }. Within the method the if stars with { and ends with }.
+
+
+Not every line ends with ';'
+When we started the programming we said every line ends with ';'. Yes and No. Now that we have know more about Java we rephrase this that every statement should end with ';'. What forms statement and what not?
+statement is roughly equivalent to sentences in natural english language. When you see if it does not end and hence we don't put ;
+   if( x > 0); {       // Wrong to put ';' as this not statement where sentence is not done.
+
+   }
