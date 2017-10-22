@@ -1,0 +1,63 @@
+﻿Some Common misconceptions 
+A class will have methods and variables
+   class Car{
+       String name;
+       int horsePower;
+
+       void start(){
+           System.out.println("starting the car:" + name);
+       }
+
+       void stop(){
+           System.out.println("stopping the car:" + name);
+       }
+   }
+In above we defined name as variable and start and stop are methods
+Car c1 = new Car();
+   Car c2 = new Car();
+
+   c1.start(); // this is calling the methods and at this time computer will run the instructions in the method start
+   c1.stop();
+
+   c2.start();
+   c2.stop();
+In above we have created 2 objects c1 and c2.
+Car c1 = new Car();
+   Car c2 = new Car();
+
+   c1.start(); // this is calling the methods and at this time computer will run the instructions in the method start
+   c1.stop();
+
+   c2.start();
+   c2.stop();
+In above we have created 2 objects c1 and c2.
+Constructors
+Lets create a class like Person and create a object.
+   class Person{
+       String name;
+
+       void printDetails(){
+           System.out.println("name is=" + name);
+       }
+   }
+
+   class Application{
+       public static void main(String[] args){
+           Person p1 = new Person();
+           p1.printDetails();
+       }
+   }
+When you run the above program you will see
+name is=null
+This is bcause you didnt declare the name in any sort of way
+
+
+The method we have added has some unique characteristics
+   Person(String  inputname){
+
+   }
+* It has the same name as class name (Person)
+* It does not return anything (for normal method when they don't return anything you need to specify void but for this you cannot type anything)
+* The parameters are just like any other methods where you can have 0 or multiple parameters.
+* This is method is called when you are creating the object and hence it is called Constructor
+*
